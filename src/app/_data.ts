@@ -10,19 +10,13 @@ export const slidesData = [
     slideImg: [],
   },
   {
-    title: "Typescript and A Word from Guido",
-    bullets: ["https://youtu.be/kSXZHRsWXfU?t=635"],
-    tabImages: ["GuidoByPeterAdams.jpg"],
-    slideImg: [],
-  },
-  {
     title: "Dynamic vs. Static Typing",
     bullets: ["What is wrong with this code?"],
     tabImages: ["img-0.0.png", "img-0.1.png", "img-0.2.png", "img-0.3.png"],
     slideImg: [],
   },
   {
-    title: "Static Type Checking",
+    title: "Benefits",
     bullets: [
       "Catch errors before runtime.",
       "Improve code maintainability.",
@@ -35,6 +29,12 @@ export const slidesData = [
       "test-ex2.png",
       "test-ex3.png",
     ],
+    slideImg: [],
+  },
+  {
+    title: "Typescript and A Word from Guido",
+    bullets: ["https://youtu.be/kSXZHRsWXfU?t=635"],
+    tabImages: ["GuidoByPeterAdams.jpg"],
     slideImg: [],
   },
   {

@@ -16,7 +16,7 @@ export const slidesData = [
   },
   {
     title: "Static Type Checking",
-    bullets: ["Catch errors before runtime.", "Improve code maintainability.",],
+    bullets: ["Catch errors before runtime.", "Improve code maintainability.","Documentation","Fewer tests"],
     tabImages: ["img-1.0.png", "img-1.1.png",'img-1.2.png','img-1.3.png'],
   },
   {
@@ -39,7 +39,7 @@ export const slidesData = [
     title: "Other Tools",
     bullets: [
       "Pyright",
-      "",
+      "Cython, Mojo",
     ],
     tabImages: ["image-1.0.svg", "image-1.1.svg", "image-1.2.svg"],
   },

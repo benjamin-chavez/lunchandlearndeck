@@ -10,7 +10,12 @@ export const slidesData = [
     slideImg: [],
   },
   {
-    // https://youtu.be/kSXZHRsWXfU?t=635
+    title: "Typescript and A Word from Guido",
+    bullets: ["https://youtu.be/kSXZHRsWXfU?t=635"],
+    tabImages: ["GuidoByPeterAdams.jpg"],
+    slideImg: [],
+  },
+  {
     title: "Dynamic vs. Static Typing",
     bullets: ["What is wrong with this code?"],
     tabImages: ["img-0.0.png", "img-0.1.png", "img-0.2.png", "img-0.3.png"],

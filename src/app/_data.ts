@@ -29,7 +29,12 @@ export const slidesData = [
       "Documentation",
       "Fewer tests",
     ],
-    tabImages: ["img-1.0.png", "test-ex1.0.png", "test-ex2", "test-ex3.png"],
+    tabImages: [
+      "img-1.0.png",
+      "test-ex1.0.png",
+      "test-ex2.png",
+      "test-ex3.png",
+    ],
     slideImg: [],
   },
   {

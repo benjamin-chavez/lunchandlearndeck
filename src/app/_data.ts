@@ -6,8 +6,8 @@ export const slidesData = [
       "Static Typing through the lens of dynamic types",
       "Trade-offs? - Development Speed, bug quantity",
     ],
-    tabImages: [],
-    slideImg: ["/mypy_light_logo.svg"],
+    tabImages: ['mypy_light_logo.svg', '2.0.png'],
+    slideImg: [""],
   },
   {
     // https://youtu.be/kSXZHRsWXfU?t=635

@@ -5,7 +5,7 @@ export const slidesData = [
       "Save and see your changes instantly.",
       "What is wrong with this code?",
     ],
-    tabImages: ["image-0.0.svg", "image-0.1.svg"],
+    tabImages: ["1.1.svg", "1.2.svg"],
   },
   {
     title: "Static Type Checking",

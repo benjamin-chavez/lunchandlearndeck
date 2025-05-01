@@ -12,7 +12,7 @@ export function Navigation({
   return (
     <div
       className={clsx(
-        "w-full mt-48 flex justify-between ",
+        "w-full flex justify-between ",
         isRoot ? "justify-end" : "",
       )}
     >

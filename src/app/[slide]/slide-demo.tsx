@@ -123,23 +123,27 @@
 // }
 //
 // export default SlideDemo;
-'use client';
-import React, { useState } from 'react';
-import Welcome from '@/app/_components/welcome.mdx';
+"use client";
+import React, { useState } from "react";
+import Welcome from "@/app/_components/welcome.mdx";
 // Dynamic tabs component
 function Tabs({ items }) {
   const [activeTab, setActiveTab] = useState(0);
 
+  if (items?.length <= 0) {
+    return null;
+  }
+
   return (
-    <div className="mt-8">
+    <div className="mt-8 bg-red-500">
       <div className="flex border-b">
-        {items.map((item, index) => (
+        {items?.map((item, index) => (
           <button
             key={index}
             className={`px-4 py-2 cursor-pointer font-mono text-sm ${
               activeTab === index
-                ? 'border-b-2 border-blue-500 font-medium'
-                : 'text-gray-600 hover:text-gray-800'
+                ? "border-b-2 border-blue-500 font-medium"
+                : "text-gray-600 hover:text-gray-800"
             }`}
             onClick={() => setActiveTab(index)}
           >
@@ -160,38 +164,38 @@ function SlideDemo({ slide }: { slide: string }) {
   const totalSlides = 3;
   const slides = [
     {
-      title: 'Dynamic vs. Static Typing',
+      title: "Dynamic vs. Static Typing",
       bullets: [
-        'Save and see your changes instantly.',
-        'What is wrong with this code?',
+        "Save and see your changes instantly.",
+        "What is wrong with this code?",
       ],
       // Define tab count and base filename for each slide
       tabConfig: {
         count: 3,
-        filePrefix: '1',
+        filePrefix: "1",
       },
     },
     {
-      title: 'Static Type Checking',
+      title: "Static Type Checking",
       bullets: [
-        'Catch errors before runtime.',
-        'Improve code maintainability.',
+        "Catch errors before runtime.",
+        "Improve code maintainability.",
       ],
       tabConfig: {
         count: 3,
-        filePrefix: '2',
+        filePrefix: "2",
       },
     },
     // Example of a slide with different number of tabs
     {
-      title: 'Type Inference',
+      title: "Type Inference",
       bullets: [
-        'Let the compiler figure out types.',
-        'Modern approach to typing.',
+        "Let the compiler figure out types.",
+        "Modern approach to typing.",
       ],
       tabConfig: {
         count: 4, // This slide has 4 tabs instead of 3
-        filePrefix: '3',
+        filePrefix: "3",
       },
     },
   ];

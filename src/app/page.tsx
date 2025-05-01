@@ -25,9 +25,9 @@ export default function Home() {
                 <PythonLogo />
               </div>
             </div>
-            <h1 className="font-mono text-4xl flex justify-center text-white/80">
+            <p className="font-mono text-4xl flex justify-center text-white/80">
               Static Type Checking
-            </h1>
+            </p>
           </div>
 
           <div className="w-full flex items-center justify-center my-10">

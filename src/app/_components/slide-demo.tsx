@@ -2,9 +2,12 @@
 
 import React, { useState } from "react";
 import { slidesData } from "@/app/_data";
+import Image from "next/image";
 
 function Tabs({ items }) {
   const [activeTab, setActiveTab] = useState(0);
+
+  if (items.length <= 0) return null;
 
   return (
     <div>
@@ -44,7 +47,7 @@ function SlideDemo({ slide }: { slide: string }) {
             <img
               src={imagePath}
               alt={`Example ${exampleNumber}`}
-              className="rounded-md shadow-sm max-w-lg"
+              className="rounded-md shadow-sm max-w-2xlg"
             />
           </div>
         ),
@@ -72,7 +75,19 @@ function SlideDemo({ slide }: { slide: string }) {
           ))}
         </ul>
 
-        <Tabs items={createTabs(currentSlide.tabImages)} />
+        {currentSlide.slideImg.length > 0 ? (
+          <div className="w-full flex items-center justify-center mt-20 my-10">
+            <Image
+              src={currentSlide.slideImg[0]}
+              alt="Mario on mypy illustration"
+              width={500}
+              height={500}
+              className="rounded-md shadow-sm"
+            />
+          </div>
+        ) : (
+          <Tabs items={createTabs(currentSlide.tabImages)} />
+        )}
       </main>
     </div>
   );

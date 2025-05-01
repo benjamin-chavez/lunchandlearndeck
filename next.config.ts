@@ -1,12 +1,11 @@
 import createMDX from "@next/mdx";
 
 /** @type {import("next").NextConfig} */
-const config = {
+const nextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   eslint: {
     ignoreDuringBuilds: true,
   },
-
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -15,6 +14,6 @@ const config = {
   },
 };
 
-const withMdx = createMDX({});
+const withMDX = createMDX({});
 
-export default config;
+export default withMDX(nextConfig);

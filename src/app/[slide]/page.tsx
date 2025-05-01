@@ -1,21 +1,24 @@
+import "server-only";
+
 import React from "react";
-import Link from "next/link";
-import SlideDemo from "@/app/[slide]/slide-demo";
+
 import { Navigation } from "@/app/_components/navigation";
+import { redirect } from "next/navigation";
+import SlideDemo from "@/app/_components/slide-demo";
 
 async function Page({ params }: { params: Promise<{ slide: string }> }) {
-  // @ts-ignore
-  const slide = await params;
-  console.log("params", slide);
+  const { slide } = await params;
+  const slideInt = parseInt(slide, 10);
+
+  if (slideInt <= -1) {
+    redirect("/");
+  }
 
   return (
-    <div>
-      <SlideDemo slide={slide.slide} />
-
-      <div className="mt-40">
-        <Navigation slide={slide.slide} />
-      </div>
-    </div>
+    <>
+      <SlideDemo slide={slide} />
+      <Navigation slide={slideInt} />
+    </>
   );
 }
 

@@ -3,7 +3,8 @@
   4 Dynamic vs Static Typing:
   3  - What is static typing, through the lens of dynamic typing
   2  - Software is about tradeoffs, what are the tradeoffs?
-  1     - Speed, or at lease initial speed
+        - Development Speed, or at lease initial speed
+        - Coder performance
 7       - ... no other cons?
   1
   2     Pros:

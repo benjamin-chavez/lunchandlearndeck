@@ -1,23 +1,47 @@
 export const slidesData = [
+    {
+    title: "Dynamic vs. Static Typing",
+    bullets: [
+      "Static Typing through the lens of dynamic types",
+      "Trade-offs? - Development Speed, bug quantity"
+    ],
+    tabImages: [],
+  },
   {
     title: "Dynamic vs. Static Typing",
     bullets: [
-      "Save and see your changes instantly.",
       "What is wrong with this code?",
     ],
     tabImages: ["img-0.0.png", "img-0.1.png",'img-0.2.png','img-0.3.png'],
   },
   {
     title: "Static Type Checking",
-    bullets: ["Catch errors before runtime.", "Improve code maintainability."],
+    bullets: ["Catch errors before runtime.", "Improve code maintainability.",],
     tabImages: ["img-1.0.png", "img-1.1.png",'img-1.2.png','img-1.3.png'],
   },
   {
-    title: "Type Inference",
+    title: "Why Mypy?",
     bullets: [
-      "Let the compiler figure out types.",
-      "Modern approach to typing.",
+      "Type Inference",
+      "Pydantic",
     ],
     tabImages: ["image-1.0.svg", "image-1.1.svg", "image-1.2.svg"],
   },
+  {
+    title: "LoanFetcher Example",
+    bullets: [
+      "",
+      "",
+    ],
+    tabImages: [],
+  },
+  {
+    title: "Other Tools",
+    bullets: [
+      "Pyright",
+      "",
+    ],
+    tabImages: ["image-1.0.svg", "image-1.1.svg", "image-1.2.svg"],
+  },
+
 ];

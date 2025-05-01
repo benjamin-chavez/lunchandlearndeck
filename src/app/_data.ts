@@ -43,7 +43,7 @@ export const slidesData = [
       "Runtime type checking vs mypy's static analysis",
       "Complementary tools",
     ],
-    tabImages: [],
+    tabImages: ["pydantic.png"],
     slideImg: [],
   },
   {
